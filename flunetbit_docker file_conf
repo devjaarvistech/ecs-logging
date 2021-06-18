@@ -1,0 +1,10 @@
+[INPUT]
+    Name        forward
+    Listen      0.0.0.0
+    Port        24224
+[OUTPUT]
+    Name  http
+    Match *
+    Host  logstah ip/dns
+    Port  24224
+    Format json
